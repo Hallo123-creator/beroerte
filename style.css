@@ -1,0 +1,58 @@
+body {
+  color: dimgray;
+  font-family: verdana;
+  background: lightgray;
+}
+
+h1 {
+  background:dimgray;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+p1 {
+  font-size: 12px;
+}
+
+#button {
+  background-color: dimgray;
+  color: white;
+  border: 1px solid #606060;
+  text-align: center;
+  padding: 2px 15px;
+}
+
+#FASTarm {
+  display: none;
+}
+
+#FASTspreken {
+  display: none;
+}
+
+#aanwezig {
+  display: none;
+}
+
+#indicatiesSpoedverwijzing {
+  display: none;
+}
+
+#chronisch {
+  display: none;
+}
+
+#ernstigeUitvalsverschijnselen {
+  display: none;
+}
+
+#positievePrognose {
+  display: none;
+}

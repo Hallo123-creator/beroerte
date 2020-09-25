@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Beroerte</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js">
+
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.min.js">
+	</script>
+	<script src="script.js">
+	</script>
+
+</head>
+
+<body>
+	<h1>Decision support system Beroerte</h1>
+	</script>
+
+	<p>FAST-test Gezicht</p>
+	<p1>
+		Vraag de patiënt de tanden te laten zien. Let op of de mond scheef staat en een mondhoek naar beneden hangt. Is dit het geval?
+	</p1>
+	<br>
+    <button id="button" onclick="showAanwezig()">Ja</button>
+    <button id="button" onclick="showFASTarm()">Nee</button>
+    <br> <br>
+    <div id="FASTarm">
+      <p>Fast-test Arm</p>
+      <p1>
+       Vraag de patiënt om beide armen tegelijkertijd horizontaal naar voren te strekken en de handpalmen naar boven te draaien. Let op of een arm wegzakt of rondzwalkt. Is dit het geval?
+      <p1/>
+      <br>
+      <button id="button" onclick="showAanwezig()">Ja</button>
+      <button id="button" onclick="showFASTspreken()">Nee</button>
+      <br><br>
+    </div>
+    <div id="FASTspreken">
+      <p>Fast-test Spreken</p>
+      <p1>
+        Vraag of er veranderingen zijn in het spreken (onduidelijk spreken of niet meer uit de woorden kunnen komen). Is dit het geval?
+      </p1>
+      <br>
+      <button id="button" onclick="showAanwezig()">Ja</button>
+      <form action="beroerteOnwaarschijnlijk.html" method="get" target="_self">
+        <button id="button" type="submit">Nee</button>
+      </form>
+      <br> <br>
+    </div>
+    <div id="aanwezig">
+      <p>Neurologische uitvalverschijnselen aan-/afwezig</p>
+      <p1>
+       Zijn de neurologische uitvalsverschijnselen nog aanwezig?
+      </p1>
+      <br>
+      <button id="button" onclick="showindicatiesSpoedverwijzing()">Ja</button>
+      <button id="button" onclick="vakerGehad()">Nee</button>
+      <br> <br>
+    </div>
+    <div id="indicatiesSpoedverwijzing">
+      <p>Indicaties spoedverwijzing</p>
+      <p1>
+        Zijn er indicaties voor een spoedverwijzing?
+      </p1>
+      <br>
+      <form action="u1urgentie.html" method="get" target="_self">
+        <button id="button" type="submit">Ja</button>
+      </form>
+      <button id="button" onclick="comorbiditeitAanwezig()">Nee</button>
+      <br> <br>
+    </div>
+    <div id="ernstigeUitvalsverschijnselen">
+      <p>Ernstige uitvalsverschijnselen</p>
+      <p1>
+        Heeft de patient zeer ernstige uitvalsverschijnselen met infauste prognose en/of uitdrukkelijk verzoek patient en mantel-zorgers om thuis te blijven?
+      </p1>
+      <br>
+      <button id="button" onclick="showPostievePrognose()">Ja</button>
+      <form action="u2urgentie.html" method="get" target="_self">
+        <button id="button" type="submit">Nee</button>
+      </form>
+      <br> <br>
+    </div>
+    <div id="positievePrognose">
+      <p>Positieve prognose</p>
+      <p1>
+        Heeft de patient een positieve prognose?
+      </p1>
+      <br>
+      <form action="revalidatie.html" method="get" target="_self">
+        <button id="button" type="submit">Ja</button>
+      </form>
+      <form action="verzorgingsmogelijkheden.html" method="get" target="_self">
+        <button id="button" type="submit">Nee</button>
+      </form>
+      <br> <br>
+    </div>
+  </body>
+</html>
